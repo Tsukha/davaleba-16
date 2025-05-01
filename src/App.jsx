@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import KanbanBoard from "./components/board";
+import Board from "./components/board";
 import { TaskProvider } from "./components/TaskContext";
 
 const AppContainer = styled.div`
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <TaskProvider>
       <AppContainer>
-        <KanbanBoard />
+        <Board />
       </AppContainer>
     </TaskProvider>
   );
